@@ -6,19 +6,24 @@ import {
 } from './actionTypes';
 
 
-export function uploadAlbum( album) {
+export function uploadAlbum( album, title, description) {
   return function(dispatch) {
     return new Promise( (resolve)=>{
-        // Submit email/password to the server
-        axios.post(`${ROOT_URL}/addAlbum`, album, {
+        // lets first upload the image to the server...
+        axios.post(`${ROOT_URL}/upload`, album, {
             headers: {
                 'Content-Type':  `multipart/form-data`
             }}).then(response => {
-                // If request is good...
-                // - Update state to with the localgovernment
-                dispatch({ type: UPLOAD_ALBUM, payload:response.data });
-
-                resolve(response)
+                let allPic=response.data.map((item)=>item.filename)
+                let uploadAlbum={imagesUrl:`${allPic.toString()}`, title, description, website:'specdios'}
+                axios.post(`${ROOT_URL}/appActions/uploadAlbum`, uploadAlbum)
+                    .then(response => {
+                        dispatch({ type: UPLOAD_ALBUM,
+                            payload: response.data
+                         });
+                        //  resolve(response)
+                    })
+                    resolve(response)
             })
             .catch(() => {
                 // If request is bad...

@@ -1,5 +1,5 @@
 //ROOT URLS
- export const ROOT_URL= 'https://uniabuja-olalekan1.c9users.io/api/v1/admissions'
+ export const ROOT_URL= 'https://berhymes-back.herokuapp.com'
 
 //ADMISSION ACTIONS
-export const UPLOAD_ALBUM = 'FETCH_LOCAL_GOVERNMENT';
+export const UPLOAD_ALBUM = 'UPLOAD_ALBUM';

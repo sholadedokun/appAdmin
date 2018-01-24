@@ -29,9 +29,7 @@ import {connect} from 'react-redux'
         for(var i=0; i<images.length; i++){
             formData.append('file', images[i]);
         }
-        formData.append('title', this.state.title);
-        formData.append('description', this.state.description);
-        this.props.uploadAlbum(formData);
+        this.props.uploadAlbum(formData, this.state.title, this.state.description);
     }
 
     render(){
