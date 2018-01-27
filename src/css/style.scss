@@ -1,4 +1,5 @@
 // font declaration
+@import url('font-awesome.min.css');
 @font-face {
   font-family: 'ProximaNova-Regular';
   src: url('../fonts/ProximaNova-Regular.eot');
@@ -258,6 +259,62 @@ img::-moz-selection {
     border-radius: 5px;
     box-shadow: none;
 }
+.file-loading{
+    border-radius:5px;
+    border: 1px solid #fff;
+    img{
+        position: absolute;
+        top: -5px;
+        right: -50px;
+        width:50px;
+        height: 50px;
+        border:2px solid #fff;
+        border-radius: 20px;
+    }
+    input{
+        opacity: 0;
+        width: 90%;
+        display: inline-block;
+        margin:0;
+        height:1.5em;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .delete{
+        width:10%;
+        color:#900;
+        background: #fff;
+        display: inline-block;
+        border-radius: 4px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding:0.75em 0.5em;
+        cursor: pointer;
+    }
+    p{
+        position: absolute;
+        top:13px;
+        left:30px;
+        color: #aaa;
+    }
+    .invalidImage{
+        position: absolute;
+        top:45px;
+        left:40px;
+        font-size: 0.9em;
+        color: #955;
+        span{
+            font-size: 1em;
+        }
+    }
+    .validImage{
+        color:#5a5;
+        position: absolute;
+        top: 15px;
+        right: -75px;
+    }
+}
 .form-group {
     margin-bottom: 25px;
 }
@@ -320,7 +377,7 @@ img::-moz-selection {
     background-color: transparent;
     border: 0;
     border-radius: 0;
-    
+
     .navbar-brand {
             padding: 30px 30px 30px 0 !important;
     }
@@ -340,7 +397,7 @@ section {
     padding: 100px 0;
     min-height: 670px;
     // height: 90vh;
-    
+
     h1 {
         color: $white;
         font-family: $secondary-font-normal;
@@ -357,16 +414,16 @@ section {
     }
     h5 {
     }
-    
+
     .step {
         margin-bottom: 30px;
         color: #BFC7D2;
         font-family: $secondary-font-normal;
         font-size: 18px;
         font-weight: 600;
-        line-height: 22px;	
+        line-height: 22px;
         text-align: center;
-    }	
+    }
 	p.subject {
         font-family: $primary-font-semibold;
         color: $white;
@@ -376,7 +433,7 @@ section {
     }
     .subject-container {
         margin: 20px 0 40px;
-        
+
         .subject-divider {
             border: 1px solid rgba(191,199,210,0.35);
         }
@@ -397,7 +454,7 @@ section {
  	    border: 1px solid #ACB4C0;
  	    border-radius: 5px;
  	    background: linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%);
- 	    
+
  	    .name {
  	        padding-top: 10px;
  	        color: $primary-color;
@@ -410,7 +467,7 @@ section {
         }
         .payment-details {
             padding: 19px 70px 40px 70px;
-            
+
             .text {
                 color: $primary-color;
                 font-family: $primary-font-normal;
@@ -434,16 +491,16 @@ section {
             }
         }
  	}
- 	
+
  	// card design
  	.card {
  	    border: 1px solid #ACB4C0;
- 	    border-radius: 5px;	background: 
+ 	    border-radius: 5px;	background:
  	    linear-gradient(180deg, #FFFFFF 0%, #F0F0F0 100%);
  	    padding: 40px  60px 30px 60px;
  	    margin-top: 10px;
  	    margin-bottom: 10px;
- 	    
+
  	    .name {
  	        color: $primary-color;
  	        font-family: $primary-font-semibold;
@@ -470,8 +527,8 @@ section {
  	        margin-top: 30px;
  	    }
  	    .text-card {
- 	        border-radius: 5px;	
- 	        background-color: $white;	
+ 	        border-radius: 5px;
+ 	        background-color: $white;
  	        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
  	        padding: 10px 20px;
  	        color: $primary-color;
@@ -479,7 +536,7 @@ section {
  	        font-size: 16px;
  	        line-height: 20px;
  	        margin-bottom: 20px;
- 	        
+
  	        span.blue {
  	            color: #00D9FF !important;
  	        }
