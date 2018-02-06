@@ -7,7 +7,7 @@ export default class StepFive extends Component{
                 <div className="step">Step 5 of 6</div>
                 <h1>Hi Olamide Adedibu, Please provide your JAMB Reg. Number</h1>
                      {/* start form */}
-                     <form  id="step_5">
+                     <form  id="5">
                        {/* form content */}
                        <div className="form-content">
                          {/* jamb details */}

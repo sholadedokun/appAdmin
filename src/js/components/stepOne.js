@@ -26,7 +26,7 @@ class StepOne extends Component{
             <Col md="8" className="centered text-center">
                 <div className="step">Step 1 of 6</div>
                 <h1>Please provide your details below</h1>
-                <form id="step_1">
+                <form id="1">
                     <div className="form-content">
                         <Col xs="10" className="centered">
                             <div className="row">

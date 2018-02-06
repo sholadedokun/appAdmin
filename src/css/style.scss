@@ -189,6 +189,14 @@ img::-moz-selection {
     -moz-transition: all 0.35s;
     transition: all 0.35s;
 }
+.addMore{
+    button{
+        padding:10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+}
 .btn-small {
     padding: 10px 37px;
     margin-top: 18px;

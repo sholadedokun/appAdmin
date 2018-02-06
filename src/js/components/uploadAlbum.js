@@ -98,7 +98,7 @@ import {connect} from 'react-redux'
                                         )
                                     })
                                     }
-                                    <Col md="12">
+                                    <Col md="12" className="addMore">
                                         <button onClick={this.addMoreImages.bind(this)} className="btn btn-blue">Add More Images</button>
                                     </Col>
                                 </div>

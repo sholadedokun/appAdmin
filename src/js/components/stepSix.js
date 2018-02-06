@@ -7,7 +7,7 @@ export default class StepSix extends Component{
                 <div className="step">Step 6 of 6</div>
                 <h1>{`Hi Olamide Adedibu, Please provide your O'Level result`}</h1>
                 {/* start form */}
-                <form id="step_6">
+                <form id="6">
                   {/* form content */}
                   <div className="form-content">
                     <div className="col-md-10 centered">

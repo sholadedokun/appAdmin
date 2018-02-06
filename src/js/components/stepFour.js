@@ -7,7 +7,7 @@ export default class StepFour extends Component{
                 <div className="step">Step 4 of 6</div>
                    <h1>Hi Olamide Adedibu, Please choose your preffered programme.</h1>
                    {/* start form */}
-                   <form id="step_4">
+                   <form id="4">
                      {/* form content */}
                      <div className="form-content">
                        {/* entry mode */}

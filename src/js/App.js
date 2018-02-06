@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Header from './components/header';
 import {BrowserRouter as Router,  Route } from 'react-router-dom';
-import {Grid, Row} from 'react-bootstrap'
+import {Grid, Row, Col} from 'react-bootstrap'
 // import Footer from './components/footer';
 import Home from './components/home'
-// import Dashboard from './components/account/home'
+import UploadAlbum from './components/uploadAlbum'
 // import Howitworks from './components/howitworks'
 // import Ourmission from './components/ourmission'
 // import Whymom from './components/whymom'
@@ -22,12 +22,17 @@ export default class App extends Component {
     render() {
         return (
             <Router>
-                <Row>
-                    <Grid fluid={true} className="App">
-                        <Header></Header>
-                        <Route  exact path="/"  component={Home} />
-                    </Grid>
-                </Row>
+                <Grid fluid={true} className="App">
+                    <Header></Header>
+                    <Row>
+                        <section className="primary-bg">
+                            <Col md="12">
+                                <Route  exact path="/"  component={Home} />
+                                <Route  exact path="/uploadAlbum"  component={UploadAlbum} />
+                            </Col>
+                        </section>
+                    </Row>
+                </Grid>
             </Router>
         );
     }

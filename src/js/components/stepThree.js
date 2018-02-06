@@ -6,7 +6,7 @@ export default class StepThree extends Component{
             <Col md="8" className="centered text-center">
                 <div className="step">Step 3 of 6</div>
                 <h1>Hi Olamide Adedibu, Please choose your mode of entry</h1>
-                <form id="step_3">
+                <form id="3">
                     <div className="form-content">
                         <div className="col-md-10 centered">
                             <div className="col-md-12">

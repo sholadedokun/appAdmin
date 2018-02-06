@@ -39,8 +39,8 @@ export default class Home extends Component{
                         <div className="step">&nbsp</div>
                         <h1>Admin Backend</h1>
                         <div className="action-btn-container">
-                            <a className ="btn btn-blue" onClick={(e)=>this.setState({step:'ViewUploadedAlbum'})}>View Uploaded Album</a>
-                            <a className ="btn btn-blue" onClick={(e)=>this.setState({step:'UploadAlbum'})}>Upload a new Album</a>
+                            <a href="/viewAlbum" className ="btn btn-blue">View Uploaded Album</a>
+                            <a className ="btn btn-blue"  href="/uploadAlbum">Upload a new Album</a>
                         </div>
                     </Col>
                 );
@@ -48,21 +48,7 @@ export default class Home extends Component{
     }
     render(){
         return(
-            <Grid fluid={true}>
-                <Row>
-                    <section className="primary-bg">
-                        <Grid>
-                            <Col md="12">
-                                {
-                                    this.renderSteps()
-                                }
-
-
-                            </Col>
-                        </Grid>
-                    </section>
-                </Row>
-            </Grid>
+            this.renderSteps()
         )
     }
 }

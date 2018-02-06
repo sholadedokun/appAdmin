@@ -8,7 +8,7 @@ export default class StepSix extends Component{
                 <div className="step">Payment</div>
                 <h1>Make payment to complete your admission process</h1>
                 {/* start form */}
-                <form method="post" action="step8.html" id="step_7" className="payment">
+                <form method="post" action="step8.html" id="7" className="payment">
                   {/* form content */}
                   <div className="form-content">
                     {/* payment info */}
@@ -99,7 +99,7 @@ export default class StepSix extends Component{
                   {/* action buttons */}
                   <div className="action-btn-container">
                     <button type="submit" onclick="history(-1)" className="btn btn-gray p20-72">Back</button>
-                    <button type="submit" form="step_7" className="btn btn-blue">Make Payment</button>
+                    <button type="submit" form="7" className="btn btn-blue">Make Payment</button>
                   </div>
                   {/* end action buttons */}
                 </form>
