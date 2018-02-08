@@ -1,9 +1,8 @@
 import { combineReducers } from 'redux';
 // import { reducer as form } from 'redux-form';
-import startAdmission from './uploadAlbum';
+import album from './albumReducer';
 
 const rootReducer = combineReducers({
-  // form,
-  admission:startAdmission,
+  album,
 });
 export default rootReducer;

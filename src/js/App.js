@@ -5,14 +5,9 @@ import {Grid, Row, Col} from 'react-bootstrap'
 // import Footer from './components/footer';
 import Home from './components/home'
 import UploadAlbum from './components/uploadAlbum'
-// import Howitworks from './components/howitworks'
-// import Ourmission from './components/ourmission'
-// import Whymom from './components/whymom'
-// import Help from './components/help'
-// import requireAuth from './components/auth/require_auth';
-// import { connect } from 'react-redux';
-// import { getAllPlans } from './actions/planActions';
-// import {getServerDate} from './actions/userActions'
+import ViewAlbum from './components/viewAlbum'
+import EditAlbum from './components/editAlbum'
+
 export default class App extends Component {
     // componentWillMount(){
     //     this.props.getAllPlans().then(data=>{
@@ -29,6 +24,8 @@ export default class App extends Component {
                             <Col md="12">
                                 <Route  exact path="/"  component={Home} />
                                 <Route  exact path="/uploadAlbum"  component={UploadAlbum} />
+                                <Route  exact path="/viewAlbum"  component={ViewAlbum} />
+                                <Route  exact path="/editAlbum/:id"  component={EditAlbum} />
                             </Col>
                         </section>
                     </Row>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import FileUploader from './fileUpload'
-import {uploadAlbum} from '../actions/uploadAlbum'
+import {uploadAlbum} from '../actions/albumActions'
 import {connect} from 'react-redux'
  class StepTwo extends Component{
     constructor(){
